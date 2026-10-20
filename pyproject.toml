@@ -1,0 +1,18 @@
+[project]
+name = "anodyne-discord-bot"
+version = "0.1.0"
+description = "Discord bot for anodyne"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "discord-py>=2.3.2",
+    "python-dotenv>=1.0.0",
+    "requests>=2.31.0",
+]
+
+[project.scripts]
+anodyne-bot = "anodyne_discord_bot.ingest:main"
+
+[build-system]
+requires = ["uv_build"]
+build-backend = "uv_build"
